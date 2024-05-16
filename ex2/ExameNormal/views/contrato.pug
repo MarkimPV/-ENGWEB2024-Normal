@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  h1 Contrato
+    ul
+        li
+            b id:
+            =contrato._id
+        li
+            b nAnuncio:
+            =contrato.nAnuncio
+        li
+            b tipoprocedimento:
+            =contrato.tipoprocedimento
+        li
+            b objectoContrato:
+            =contrato.objectoContrato
+        li
+            b dataPublicacao:
+            =contrato.dataPublicacao
+        li
+            b dataCelebracaoContrato:
+            =contrato.dataCelebracaoContrato
+        li
+            b precoContratual:
+            =contrato.precoContratual
+        li
+            b prazoExecucao:
+            =contrato.prazoExecucao
+        li
+            b NIPC_entidade_comunicante:
+            =contrato.NIPC_entidade_comunicante
+        li
+            b entidade_comunicante:
+            =contrato.entidade_comunicante
+        li
+            b fundamentacao:
+            =contrato.fundamentacao
+    a(href="/") Voltar

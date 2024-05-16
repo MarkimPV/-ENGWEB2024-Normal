@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1 EW2023/24
+  table
+    thead
+        tr
+            th idcontrato,
+            th objectoContrato,
+            th dataCelebracaoContrato
+            th precoContratual
+            th NIPC_entidade_comunicante
+            th entidade_comunicante
+    tbody
+        each elem in listaContratos
+            tr
+                td
+                    a(href="/contrato/" + elem._id)=elem.elem._id
+                td=elem.objectoContrato
+                td=elem.dataCelebracaoContrato
+                td=elem.precoContratual
+                td
+                    a(href="/entidades/" + NIPC_entidade_comunicante)=elem.NIPC_entidade_comunicante
+                td=elem.entidade_comunicante
